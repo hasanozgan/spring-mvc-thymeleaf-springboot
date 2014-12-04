@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"  xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+      layout:decorator="master">
+<head>
+        <title>Home</title>
+</head>
+<body>
+	<!-- Any content you put in the div fragment below will appear on the page-->
+	<div class="container" layout:fragment="content">
+	<div class="row">
+		<div class="span8">
+			<h3>Hello! Welcome to the saple project.</h3>
+
+            <p>
+                <a th:href="@{/secure/home}">Here</a> is a page secured with spring security. Login with username 'admin' and password 'password'
+            </p>
+		</div>
+	</div>
+	</div>
+</body>
+</html>
